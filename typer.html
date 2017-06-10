@@ -1,25 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>typer</title>
-	<style> 
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		html, body, canvas {
-			width: 100%;
-			height: 100%;
-		}
-		canvas {
-			position: absolute;
-		}
-	</style>
-	<script src="TYPER.js"></script>
-    <script src="Word.js"></script>
+
+	<title>Typer</title>
+	<script src="TYPER.js">
+	</script>
+	<script src="Word.js">
+	</script>
+	<link href="style1.css" rel="stylesheet">
 </head>
+
 <body>
-	<canvas></canvas>
+	<div id="menu">
+		<audio id="startAudio" ></audio>
+	</div>
+	<button class="btn" onclick="location.href='index.html'">Back</button>
+
+	<div id="canvas">
+		<canvas>
+		</canvas>
+	</div>
+
+	<div id="playerStats">
+		<p>Time: <span id="time"></span></p>
+
+		<p id="score">:</p>
+
+	</div>
 </body>
 </html>
